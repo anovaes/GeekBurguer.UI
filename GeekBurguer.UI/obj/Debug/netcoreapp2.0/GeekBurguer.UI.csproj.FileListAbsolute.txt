@@ -1,0 +1,13 @@
+C:\Users\alexn\Desktop\DEV\MBA\MicroServiços\Projeto\GeekBurguer.UI\GeekBurguer.UI\bin\Debug\netcoreapp2.0\GeekBurguer.UI.deps.json
+C:\Users\alexn\Desktop\DEV\MBA\MicroServiços\Projeto\GeekBurguer.UI\GeekBurguer.UI\bin\Debug\netcoreapp2.0\GeekBurguer.UI.runtimeconfig.json
+C:\Users\alexn\Desktop\DEV\MBA\MicroServiços\Projeto\GeekBurguer.UI\GeekBurguer.UI\bin\Debug\netcoreapp2.0\GeekBurguer.UI.runtimeconfig.dev.json
+C:\Users\alexn\Desktop\DEV\MBA\MicroServiços\Projeto\GeekBurguer.UI\GeekBurguer.UI\bin\Debug\netcoreapp2.0\GeekBurguer.UI.dll
+C:\Users\alexn\Desktop\DEV\MBA\MicroServiços\Projeto\GeekBurguer.UI\GeekBurguer.UI\bin\Debug\netcoreapp2.0\GeekBurguer.UI.pdb
+C:\Users\alexn\Desktop\DEV\MBA\MicroServiços\Projeto\GeekBurguer.UI\GeekBurguer.UI\obj\Debug\netcoreapp2.0\GeekBurguer.UI.csprojResolveAssemblyReference.cache
+C:\Users\alexn\Desktop\DEV\MBA\MicroServiços\Projeto\GeekBurguer.UI\GeekBurguer.UI\obj\Debug\netcoreapp2.0\GeekBurguer.UI.csproj.CoreCompileInputs.cache
+C:\Users\alexn\Desktop\DEV\MBA\MicroServiços\Projeto\GeekBurguer.UI\GeekBurguer.UI\obj\Debug\netcoreapp2.0\GeekBurguer.UI.AssemblyInfoInputs.cache
+C:\Users\alexn\Desktop\DEV\MBA\MicroServiços\Projeto\GeekBurguer.UI\GeekBurguer.UI\obj\Debug\netcoreapp2.0\GeekBurguer.UI.AssemblyInfo.cs
+C:\Users\alexn\Desktop\DEV\MBA\MicroServiços\Projeto\GeekBurguer.UI\GeekBurguer.UI\obj\Debug\netcoreapp2.0\GeekBurguer.UI.dll
+C:\Users\alexn\Desktop\DEV\MBA\MicroServiços\Projeto\GeekBurguer.UI\GeekBurguer.UI\obj\Debug\netcoreapp2.0\GeekBurguer.UI.pdb
+C:\Users\alexn\Desktop\DEV\MBA\MicroServiços\Projeto\GeekBurguer.UI\GeekBurguer.UI\bin\Debug\netcoreapp2.0\GeekBurguer.UI.Contract.dll
+C:\Users\alexn\Desktop\DEV\MBA\MicroServiços\Projeto\GeekBurguer.UI\GeekBurguer.UI\bin\Debug\netcoreapp2.0\GeekBurguer.UI.Contract.pdb
