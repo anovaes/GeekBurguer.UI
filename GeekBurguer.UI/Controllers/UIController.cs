@@ -146,6 +146,7 @@ namespace GeekBurguer.UI.Controllers
             }
         }
 
+        [HttpPost]
         public IActionResult ChoseRestriction(User user)
         {
             var lista = ApiChoseRestriction(user);

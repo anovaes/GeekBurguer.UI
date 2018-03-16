@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.0",
-    "signature": "e531c305d00baddce899010831a73f4f436ee99a"
+    "signature": "49ace3a13c5a223a55bc384c4f62da43805a1501"
   },
   "compilationOptions": {
     "defines": [
@@ -23,6 +23,7 @@
     ".NETCoreApp,Version=v2.0": {
       "GeekBurguer.UI/1.0.0": {
         "dependencies": {
+          "GeekBurger.Users.Contract": "1.0.0",
           "GeekBurguer.UI.Contract": "1.0.0",
           "Microsoft.AspNetCore.All": "2.0.5",
           "Microsoft.NETCore.App": "2.0.0",
@@ -33,6 +34,14 @@
         },
         "compile": {
           "GeekBurguer.UI.dll": {}
+        }
+      },
+      "GeekBurger.Users.Contract/1.0.0": {
+        "runtime": {
+          "lib/netcoreapp2.0/GeekBurger.Users.Contract.dll": {}
+        },
+        "compile": {
+          "lib/netcoreapp2.0/GeekBurger.Users.Contract.dll": {}
         }
       },
       "Libuv/1.10.0": {
@@ -4245,6 +4254,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "GeekBurger.Users.Contract/1.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-KJQpfwvLXCIBY210+oWM/KQKd8Mpfbb8C5QSQL1GqX/98a/FN4fuU3nhYXVIY0kSSVgrD2+XuwFdzoauczysuQ==",
+      "path": "geekburger.users.contract/1.0.0",
+      "hashPath": "geekburger.users.contract.1.0.0.nupkg.sha512"
     },
     "Libuv/1.10.0": {
       "type": "package",
