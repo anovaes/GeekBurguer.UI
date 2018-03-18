@@ -10,7 +10,6 @@ C:\Users\alexn\Desktop\DEV\MBA\MicroServiços\Projeto\GeekBurguer.UI\GeekBurguer
 C:\Users\diego\Source\Repos\GeekBurguer.UI\GeekBurguer.UI.Contract\bin\Debug\netcoreapp2.0\GeekBurguer.UI.Contract.deps.json
 C:\Users\diego\Source\Repos\GeekBurguer.UI\GeekBurguer.UI.Contract\bin\Debug\netcoreapp2.0\GeekBurguer.UI.Contract.dll
 C:\Users\diego\Source\Repos\GeekBurguer.UI\GeekBurguer.UI.Contract\bin\Debug\netcoreapp2.0\GeekBurguer.UI.Contract.pdb
-C:\Users\diego\Source\Repos\GeekBurguer.UI\GeekBurguer.UI.Contract\obj\Debug\netcoreapp2.0\GeekBurguer.UI.Contract.csprojResolveAssemblyReference.cache
 C:\Users\diego\Source\Repos\GeekBurguer.UI\GeekBurguer.UI.Contract\obj\Debug\netcoreapp2.0\GeekBurguer.UI.Contract.csproj.CoreCompileInputs.cache
 C:\Users\diego\Source\Repos\GeekBurguer.UI\GeekBurguer.UI.Contract\obj\Debug\netcoreapp2.0\GeekBurguer.UI.Contract.AssemblyInfoInputs.cache
 C:\Users\diego\Source\Repos\GeekBurguer.UI\GeekBurguer.UI.Contract\obj\Debug\netcoreapp2.0\GeekBurguer.UI.Contract.AssemblyInfo.cs
