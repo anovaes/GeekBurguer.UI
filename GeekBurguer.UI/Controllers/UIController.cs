@@ -153,7 +153,9 @@ namespace GeekBurguer.UI.Controllers
             return Ok(lista);
         }
 
-        public IActionResult PostOrder(Order order)
+        ////Nova Ordem
+        [HttpGet]
+        public IActionResult Order(Order order)
         {
             var pedido = ApiPostOrder(order);
             return Ok(pedido);

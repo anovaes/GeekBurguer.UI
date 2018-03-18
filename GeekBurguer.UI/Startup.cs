@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
+using Swashbuckle.AspNetCore.Swagger;
 
 namespace GeekBurguer.UI
 {
@@ -17,10 +18,15 @@ namespace GeekBurguer.UI
         {
             var mvcCoreBuilder = services.AddMvcCore();
 
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new Info { Title = "UI API", Version = "v1" });
+            });
+
             mvcCoreBuilder
             .AddFormatterMappings()
             .AddJsonFormatters()
-            .AddCors();
+            .AddCors().AddApiExplorer();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -30,7 +36,12 @@ namespace GeekBurguer.UI
             {
                 app.UseDeveloperExceptionPage();
             }
+            app.UseSwagger();
 
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "UI API V1");
+            });
             app.UseMvc();
         }
     }
