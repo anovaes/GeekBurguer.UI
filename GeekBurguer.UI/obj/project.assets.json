@@ -2,36 +2,6 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v2.0": {
-      "GeekBurger.Orders.Contract/2.0.0": {
-        "type": "package",
-        "dependencies": {
-          "GeekBurger.Products.Contract": "2.0.0"
-        },
-        "compile": {
-          "lib/netcoreapp2.0/GeekBurger.Orders.Contract.dll": {}
-        },
-        "runtime": {
-          "lib/netcoreapp2.0/GeekBurger.Orders.Contract.dll": {}
-        }
-      },
-      "GeekBurger.Products.Contract/2.0.0": {
-        "type": "package",
-        "compile": {
-          "lib/netcoreapp2.0/GeekBurger.Products.Contract.dll": {}
-        },
-        "runtime": {
-          "lib/netcoreapp2.0/GeekBurger.Products.Contract.dll": {}
-        }
-      },
-      "GeekBurger.Users.Contract/1.0.0": {
-        "type": "package",
-        "compile": {
-          "lib/netcoreapp2.0/GeekBurger.Users.Contract.dll": {}
-        },
-        "runtime": {
-          "lib/netcoreapp2.0/GeekBurger.Users.Contract.dll": {}
-        }
-      },
       "Libuv/1.10.0": {
         "type": "package",
         "dependencies": {
@@ -5072,36 +5042,6 @@
     }
   },
   "libraries": {
-    "GeekBurger.Orders.Contract/2.0.0": {
-      "sha512": "c6CkrV8NnigEAvWNlX+PFyivXSrBfg4tbBTCDPfQGUUBOijvCIZt8sL8kuINax46uKGEPW4HcgHN5oQtKDGydQ==",
-      "type": "package",
-      "path": "geekburger.orders.contract/2.0.0",
-      "files": [
-        "geekburger.orders.contract.2.0.0.nupkg.sha512",
-        "geekburger.orders.contract.nuspec",
-        "lib/netcoreapp2.0/GeekBurger.Orders.Contract.dll"
-      ]
-    },
-    "GeekBurger.Products.Contract/2.0.0": {
-      "sha512": "YJS5MTWFAqQNUpO1/PUKpdbtRoNJqegRayoBxCATv+aIif5c5i0iqOo9eZbKVZhmYTGlwGtHMQNeXNYlXy+szw==",
-      "type": "package",
-      "path": "geekburger.products.contract/2.0.0",
-      "files": [
-        "geekburger.products.contract.2.0.0.nupkg.sha512",
-        "geekburger.products.contract.nuspec",
-        "lib/netcoreapp2.0/GeekBurger.Products.Contract.dll"
-      ]
-    },
-    "GeekBurger.Users.Contract/1.0.0": {
-      "sha512": "KJQpfwvLXCIBY210+oWM/KQKd8Mpfbb8C5QSQL1GqX/98a/FN4fuU3nhYXVIY0kSSVgrD2+XuwFdzoauczysuQ==",
-      "type": "package",
-      "path": "geekburger.users.contract/1.0.0",
-      "files": [
-        "geekburger.users.contract.1.0.0.nupkg.sha512",
-        "geekburger.users.contract.nuspec",
-        "lib/netcoreapp2.0/GeekBurger.Users.Contract.dll"
-      ]
-    },
     "Libuv/1.10.0": {
       "sha512": "GsCf4q+eyaI49rCPlgYxdxa1SQCysXFFdSJWdstrwxytg4+VPYLYrXD4AT2rjHVJ+UF7SSWX9CapWEYaU4ejVQ==",
       "type": "package",
@@ -13201,44 +13141,37 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\alexn\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {},
+    "C:\\Users\\Tiago\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
-    "restoreSettings": {
-      "hideWarningsAndErrors": true
-    },
     "restore": {
-      "projectUniqueName": "C:\\Users\\alexn\\Desktop\\DEV\\MBA\\MicroServiços\\Projeto\\GeekBurguer.UI\\GeekBurguer.UI\\GeekBurguer.UI.csproj",
+      "projectUniqueName": "C:\\Users\\Tiago\\Source\\Repos\\GeekBurguer.UI\\GeekBurguer.UI\\GeekBurguer.UI.csproj",
       "projectName": "GeekBurguer.UI",
-      "projectPath": "C:\\Users\\alexn\\Desktop\\DEV\\MBA\\MicroServiços\\Projeto\\GeekBurguer.UI\\GeekBurguer.UI\\GeekBurguer.UI.csproj",
-      "packagesPath": "C:\\Users\\alexn\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\alexn\\Desktop\\DEV\\MBA\\MicroServiços\\Projeto\\GeekBurguer.UI\\GeekBurguer.UI\\obj\\",
+      "projectPath": "C:\\Users\\Tiago\\Source\\Repos\\GeekBurguer.UI\\GeekBurguer.UI\\GeekBurguer.UI.csproj",
+      "packagesPath": "C:\\Users\\Tiago\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Tiago\\Source\\Repos\\GeekBurguer.UI\\GeekBurguer.UI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\alexn\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
+        "C:\\Users\\Tiago\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.0"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {},
-        "https://nugetserverfiap11net.azurewebsites.net/nuget": {}
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "C:\\Users\\alexn\\Desktop\\DEV\\MBA\\MicroServiços\\Projeto\\GeekBurguer.UI\\GeekBurguer.UI.Contract\\GeekBurguer.UI.Contract.csproj": {
-              "projectPath": "C:\\Users\\alexn\\Desktop\\DEV\\MBA\\MicroServiços\\Projeto\\GeekBurguer.UI\\GeekBurguer.UI.Contract\\GeekBurguer.UI.Contract.csproj"
+            "C:\\Users\\Tiago\\Source\\Repos\\GeekBurguer.UI\\GeekBurguer.UI.Contract\\GeekBurguer.UI.Contract.csproj": {
+              "projectPath": "C:\\Users\\Tiago\\Source\\Repos\\GeekBurguer.UI\\GeekBurguer.UI.Contract\\GeekBurguer.UI.Contract.csproj"
             }
           }
         }
@@ -13281,5 +13214,25 @@
         "warn": true
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Unable to find package GeekBurger.Orders.Contract. No packages exist with this id in source(s): Microsoft Visual Studio Offline Packages, nuget.org",
+      "libraryId": "GeekBurger.Orders.Contract",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.0"
+      ]
+    },
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Unable to find package GeekBurger.Users.Contract. No packages exist with this id in source(s): Microsoft Visual Studio Offline Packages, nuget.org",
+      "libraryId": "GeekBurger.Users.Contract",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.0"
+      ]
+    }
+  ]
 }
