@@ -8,5 +8,8 @@ namespace GeekBurguer.UI.Contract
     {
         public Guid UserId { get; set; }
         public List<Allergy> Allergies { get; set; }
+
+        public int TesteCommit { get; set; }
+
     }
 }
