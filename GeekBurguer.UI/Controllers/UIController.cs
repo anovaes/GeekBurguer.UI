@@ -176,6 +176,12 @@ namespace GeekBurguer.UI.Controllers
             return 1354;
         }
 
+        private string ApiPostProducts(Guid Id)
+        {
+            //List<string> listProducts = new List<string>();
+            return "retornar lista";
+        }
+
         //[HttpGet("{storeid}")]
         //public IActionResult GetProductsByStoreId(Guid storeId)
         //{
@@ -185,5 +191,13 @@ namespace GeekBurguer.UI.Controllers
         //        return NotFound();
         //    return Ok(productsByStore);
         //}
+
+        [HttpGet("{storeid}")]
+        public IActionResult GetProducts(Guid id)
+        {
+            var products = ApiPostProducts(id);
+
+            return Ok(products);
+        }
     }
 }
