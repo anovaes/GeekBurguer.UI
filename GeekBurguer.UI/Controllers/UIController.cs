@@ -174,6 +174,30 @@ namespace GeekBurguer.UI.Controllers
             return 1354;
         }
 
+        public void GetProductUser(List<Order> order)
+        {
+            Order orderProduct;
+            foreach (var item in order)
+            {
+
+                new Order
+                {
+                    OrderId = Guid.NewGuid(),
+                    Product = new Product()
+                    {
+                        ProductId = Guid.NewGuid(),
+                        StoreName = item.Product.StoreName,
+                        Image = item.Product.Image,
+                        Price = item.Product.Price,
+
+                        Items = new List<Item>
+                        {
+                            new Item { ItemId = Guid.NewGuid(), Name = "Leite" },
+                        },
+                    }
+                };
+            }
+        }
         //[HttpGet("{storeid}")]
         //public IActionResult GetProductsByStoreId(Guid storeId)
         //{
@@ -183,5 +207,6 @@ namespace GeekBurguer.UI.Controllers
         //        return NotFound();
         //    return Ok(productsByStore);
         //}
+
     }
 }
