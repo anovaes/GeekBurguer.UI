@@ -175,29 +175,14 @@ namespace GeekBurguer.UI.Controllers
         {
             return 1354;
         }
-        public void GetProductUser(List<Order> order)
+        private int ApiPostOrder(List<Order> order)
         {
-            Order orderProduct;
-            foreach (var item in order)
-            {
-                new Order
-                {
-                    OrderId = Guid.NewGuid(),
-                    Product = new Product()
-                    {
-                        ProductId = Guid.NewGuid(),
-                        StoreName = item.Product.StoreName,
-                        Image = item.Product.Image,
-                        Price = item.Product.Price,
-
-                        Items = new List<Item>
-                        {
-                            //Resolver problema de inclusão de lista de itens
-                            new Item { ItemId = Guid.NewGuid(), Name = item.Product.Items.Name },
-                        },
-                    }
-                };
-            }
+            return 2000;
+        }
+        public IActionResult GetProductUser(List<Order> order)
+        {
+            var pedido = ApiPostOrder(order);
+            return Ok(pedido);
         }
         //[HttpGet("{storeid}")]
         //public IActionResult GetProductsByStoreId(Guid storeId)
