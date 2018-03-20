@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
+using System.Net.Http;
 using System.Threading.Tasks;
 using GeekBurguer.UI.Contract;
 using Microsoft.AspNetCore.Http;
@@ -14,7 +16,7 @@ namespace GeekBurguer.UI.Controllers
     {
         private User _usuario;
         private List<Store> _listaEstoque;
-
+        static HttpClient client = new HttpClient();
         public UIController()
         {
             _usuario = new User
@@ -179,11 +181,12 @@ namespace GeekBurguer.UI.Controllers
         {
             return 2000;
         }
-        public IActionResult GetProductUser(List<Order> order)
+        public async Task<IActionResult> GetProductUser(List<Order> order)
         {
-            var pedido = ApiPostOrder(order);
-            return Ok(pedido);
+            HttpResponseMessage response = await client.GetAsync($"api/products/id");
+            return Ok(response);
         }
+
         //[HttpGet("{storeid}")]
         //public IActionResult GetProductsByStoreId(Guid storeId)
         //{
