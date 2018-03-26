@@ -62,6 +62,23 @@ namespace GeekBurguer.UI.Controllers
             return Ok(pedido);
         }
 
+        [HttpGet]
+        public IActionResult ShowFoodRestrictionsForm(User user)
+        {
+            return Ok();
+        }
+
+        public IActionResult FoodRestriction(Allergy user)
+        {
+            return Ok();
+        }
+
+        public IActionResult ApiFoodRestriction(User user)
+        {
+            return Ok();
+        }
+
+
         private bool ApiIndentifyUser(byte[] userFace)
         {
             return false;
