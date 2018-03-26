@@ -7,11 +7,6 @@ using System.Threading.Tasks;
 using GeekBurguer.UI.Contract;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Configuration;
-using System.IO;
-using GeekBurguer.UI.Controllers.Configuration;
-using GeekBurguer.UI.Service;
-using GeekBurger.Users.Contract;
 
 namespace GeekBurguer.UI.Controllers
 {
@@ -22,13 +17,122 @@ namespace GeekBurguer.UI.Controllers
         private Contract.User _usuario;
         private List<Store> _listaEstoque;
         static HttpClient client = new HttpClient();
-        private List<Product> _listaProdutos;
-        private Queue messageFila = new Queue();
-        private List<Restriction> restrictionsLists;
-
         public UIController()
         {
+            _usuario = new User
+            {
+                UserId = Guid.NewGuid(),
+                Allergies = new List<Allergy>()
+                {
+                    new Allergy { AllergyId = Guid.NewGuid(), Name = "Carne", Ativo=false},
+                    new Allergy { AllergyId = Guid.NewGuid(), Name = "Leite", Ativo=false },
+                    new Allergy { AllergyId = Guid.NewGuid(), Name = "Amendoim", Ativo=false }
+                }
+            };
 
+            _listaEstoque = new List<Store>
+            {
+                new Store
+                {
+                    StoreId=Guid.NewGuid(),
+                    Name="Chapa",
+                    Products=new List<Product>
+                    {
+                        new Product
+                        {
+                            ProductId=Guid.NewGuid(),
+                            Name="Burguer",
+                            Image="burguer.jpeg",
+                            Items=new List<Item>
+                            {
+                                new Item{ ItemId=Guid.NewGuid(),Name="Pão"},
+                                new Item{ ItemId=Guid.NewGuid(),Name="Carne"},
+                                new Item{ ItemId=Guid.NewGuid(),Name="Queijo"},
+                                new Item{ ItemId=Guid.NewGuid(),Name="Alface"},
+                            }
+                        },
+                        new Product
+                        {
+                            ProductId=Guid.NewGuid(),
+                            Name="Hotdog",
+                            Image="hotdog.jpeg",
+                            Items=new List<Item>
+                            {
+                                new Item{ ItemId=Guid.NewGuid(),Name="Pão"},
+                                new Item{ ItemId=Guid.NewGuid(),Name="Salsicha"},
+                                new Item{ ItemId=Guid.NewGuid(),Name="Catchup"},
+                                new Item{ ItemId=Guid.NewGuid(),Name="Batata Palha"},
+                            }
+                        }
+                    }
+                },
+                new Store
+                {
+                    StoreId=Guid.NewGuid(),
+                    Name="Fritadeira",
+                    Products=new List<Product>
+                    {
+                        new Product
+                        {
+                            ProductId=Guid.NewGuid(),
+                            Name="Batata Frita",
+                            Image="fritas.jpeg",
+                            Items=new List<Item>
+                            {
+                                new Item{ ItemId=Guid.NewGuid(),Name="Batata"},
+                                new Item{ ItemId=Guid.NewGuid(),Name="Óleo"},
+                                new Item{ ItemId=Guid.NewGuid(),Name="Sal"},
+                            }
+                        },
+                        new Product
+                        {
+                            ProductId=Guid.NewGuid(),
+                            Name="Nugget",
+                            Image="nugget.jpeg",
+                            Items=new List<Item>
+                            {
+                                new Item{ ItemId=Guid.NewGuid(),Name="Frango"},
+                                new Item{ ItemId=Guid.NewGuid(),Name="Farinha"},
+                                new Item{ ItemId=Guid.NewGuid(),Name="Óleo"},
+                            }
+                        }
+                    }
+                },
+                new Store
+                {
+                    StoreId=Guid.NewGuid(),
+                    Name="Sobremesa",
+                    Products=new List<Product>
+                    {
+                        new Product
+                        {
+                            ProductId=Guid.NewGuid(),
+                            Name="Sorvete",
+                            Image="sorvete.jpeg",
+                            Items=new List<Item>
+                            {
+                                new Item{ ItemId=Guid.NewGuid(),Name="Leite"},
+                                new Item{ ItemId=Guid.NewGuid(),Name="Chocolate"},
+                                new Item{ ItemId=Guid.NewGuid(),Name="Açúcar"},
+                            }
+                        },
+                        new Product
+                        {
+                            ProductId=Guid.NewGuid(),
+                            Name="Torta de maça",
+                            Image="torta.jpeg",
+                            Items=new List<Item>
+                            {
+                                new Item{ ItemId=Guid.NewGuid(),Name="Farinha"},
+                                new Item{ ItemId=Guid.NewGuid(),Name="Ovo"},
+                                new Item{ ItemId=Guid.NewGuid(),Name="Manteiga"},
+                                new Item{ ItemId=Guid.NewGuid(),Name="Leite"},
+                                new Item{ ItemId=Guid.NewGuid(),Name="Maçã"},
+                            }
+                        }
+                    }
+                }
+            };
         }
 
         [HttpGet("{userFace}")]

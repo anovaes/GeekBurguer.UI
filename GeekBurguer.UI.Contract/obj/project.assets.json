@@ -2274,8 +2274,11 @@
       "type": "package",
       "path": "newtonsoft.json/9.0.1",
       "files": [
+<<<<<<< HEAD
+=======
         "Newtonsoft.Json.9.0.1.nupkg.sha512",
         "Newtonsoft.Json.nuspec",
+>>>>>>> 3d96ffdc27bdba1497f421f0de72ccd214757a75
         "lib/net20/Newtonsoft.Json.dll",
         "lib/net20/Newtonsoft.Json.xml",
         "lib/net35/Newtonsoft.Json.dll",
@@ -2290,6 +2293,11 @@
         "lib/portable-net40+sl5+wp80+win8+wpa81/Newtonsoft.Json.xml",
         "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll",
         "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.xml",
+<<<<<<< HEAD
+        "newtonsoft.json.9.0.1.nupkg.sha512",
+        "newtonsoft.json.nuspec",
+=======
+>>>>>>> 3d96ffdc27bdba1497f421f0de72ccd214757a75
         "tools/install.ps1"
       ]
     },
@@ -5527,25 +5535,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\diego\\.nuget\\packages\\": {},
+    "C:\\Users\\adm\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\diego\\Source\\Repos\\GeekBurguer.UI\\GeekBurguer.UI.Contract\\GeekBurguer.UI.Contract.csproj",
+      "projectUniqueName": "A:\\Alexandre\\DEV\\GeekBurguer\\GeekBurguer.UI.Contract\\GeekBurguer.UI.Contract.csproj",
       "projectName": "GeekBurguer.UI.Contract",
-      "projectPath": "C:\\Users\\diego\\Source\\Repos\\GeekBurguer.UI\\GeekBurguer.UI.Contract\\GeekBurguer.UI.Contract.csproj",
-      "packagesPath": "C:\\Users\\diego\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\diego\\Source\\Repos\\GeekBurguer.UI\\GeekBurguer.UI.Contract\\obj\\",
+      "projectPath": "A:\\Alexandre\\DEV\\GeekBurguer\\GeekBurguer.UI.Contract\\GeekBurguer.UI.Contract.csproj",
+      "packagesPath": "C:\\Users\\adm\\.nuget\\packages\\",
+      "outputPath": "A:\\Alexandre\\DEV\\GeekBurguer\\GeekBurguer.UI.Contract\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\diego\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\adm\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
       ],
@@ -5554,8 +5562,8 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "http://nugetserverfiap11net.azurewebsites.net/nuget": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {},
+        "https://nugetserverfiap11net.azurewebsites.net/nuget": {}
       },
       "frameworks": {
         "netcoreapp2.0": {

@@ -45,16 +45,7 @@
           "lib/netcoreapp2.0/GeekBurger.Products.Contract.dll": {}
         }
       },
-      "GeekBurger.StoreCatalog.Contract/1.0.0": {
-        "type": "package",
-        "compile": {
-          "lib/netcoreapp2.0/GeekBurger.StoreCatalog.Contract.dll": {}
-        },
-        "runtime": {
-          "lib/netcoreapp2.0/GeekBurger.StoreCatalog.Contract.dll": {}
-        }
-      },
-      "GeekBurger.Users.Contract/2.0.0": {
+      "GeekBurger.Users.Contract/1.0.0": {
         "type": "package",
         "compile": {
           "lib/netcoreapp2.0/GeekBurger.Users.Contract.dll": {}
@@ -5428,18 +5419,8 @@
         "lib/netcoreapp2.0/GeekBurger.Products.Contract.dll"
       ]
     },
-    "GeekBurger.StoreCatalog.Contract/1.0.0": {
-      "sha512": "3ouahho+0Qs1EyPpNtaHezAKRyQ4uyCMIuHSVeq4ODJxCk6GP1vaewI4k+3wg1udsUtRmpc/3j6k3a1nsCA4Ig==",
-      "type": "package",
-      "path": "geekburger.storecatalog.contract/1.0.0",
-      "files": [
-        "geekburger.storecatalog.contract.1.0.0.nupkg.sha512",
-        "geekburger.storecatalog.contract.nuspec",
-        "lib/netcoreapp2.0/GeekBurger.StoreCatalog.Contract.dll"
-      ]
-    },
-    "GeekBurger.Users.Contract/2.0.0": {
-      "sha512": "xErNdVMsSBa9e1Ta0xlBOCMt6H/D1PjZJe9KKDxBz6+HOHi8UljKJudWSDoKP5SlpGC2gaP32B5j8OsHjHEu3g==",
+    "GeekBurger.Users.Contract/1.0.0": {
+      "sha512": "KJQpfwvLXCIBY210+oWM/KQKd8Mpfbb8C5QSQL1GqX/98a/FN4fuU3nhYXVIY0kSSVgrD2+XuwFdzoauczysuQ==",
       "type": "package",
       "path": "geekburger.users.contract/2.0.0",
       "files": [
@@ -8502,7 +8483,7 @@
       ]
     },
     "Remotion.Linq/2.1.1": {
-      "sha512": "ilYLDD8GOLeQ7XG7Kuov6TtqJy9o89M9osYJCeClQKbVN0/oPSsnpR56d72VEh/hdSe4tQOZ4Ts13b2mPJRssg==",
+      "sha512": "IJn0BqkvwEDpP+2qjvci7n4/a9f7DhKESLWb2/uG4xQh3rTkGTBUz69bI4IivCoKkTFAqjXxYDZw2K/npohjsw==",
       "type": "package",
       "path": "remotion.linq/2.1.1",
       "files": [
@@ -13946,8 +13927,7 @@
       "AutoMapper >= 6.2.2",
       "GeekBurger.Orders.Contract >= 2.0.0",
       "GeekBurger.Products.Contract >= 3.0.0",
-      "GeekBurger.StoreCatalog.Contract >= 1.0.0",
-      "GeekBurger.Users.Contract >= 2.0.0",
+      "GeekBurger.Users.Contract >= 1.0.0",
       "GeekBurguer.UI.Contract >= 1.0.0",
       "Microsoft.AspNetCore.All >= 2.0.6",
       "Microsoft.Azure.Management.ServiceBus.Fluent >= 1.7.0",
@@ -13958,25 +13938,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\diego\\.nuget\\packages\\": {},
+    "C:\\Users\\adm\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\diego\\Source\\Repos\\GeekBurguer.UI\\GeekBurguer.UI\\GeekBurguer.UI.csproj",
+      "projectUniqueName": "A:\\Alexandre\\DEV\\GeekBurguer\\GeekBurguer.UI\\GeekBurguer.UI.csproj",
       "projectName": "GeekBurguer.UI",
-      "projectPath": "C:\\Users\\diego\\Source\\Repos\\GeekBurguer.UI\\GeekBurguer.UI\\GeekBurguer.UI.csproj",
-      "packagesPath": "C:\\Users\\diego\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\diego\\Source\\Repos\\GeekBurguer.UI\\GeekBurguer.UI\\obj\\",
+      "projectPath": "A:\\Alexandre\\DEV\\GeekBurguer\\GeekBurguer.UI\\GeekBurguer.UI.csproj",
+      "packagesPath": "C:\\Users\\adm\\.nuget\\packages\\",
+      "outputPath": "A:\\Alexandre\\DEV\\GeekBurguer\\GeekBurguer.UI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\diego\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\adm\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
       ],
@@ -13985,14 +13965,14 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "http://nugetserverfiap11net.azurewebsites.net/nuget": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {},
+        "https://nugetserverfiap11net.azurewebsites.net/nuget": {}
       },
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "C:\\Users\\diego\\Source\\Repos\\GeekBurguer.UI\\GeekBurguer.UI.Contract\\GeekBurguer.UI.Contract.csproj": {
-              "projectPath": "C:\\Users\\diego\\Source\\Repos\\GeekBurguer.UI\\GeekBurguer.UI.Contract\\GeekBurguer.UI.Contract.csproj"
+            "A:\\Alexandre\\DEV\\GeekBurguer\\GeekBurguer.UI.Contract\\GeekBurguer.UI.Contract.csproj": {
+              "projectPath": "A:\\Alexandre\\DEV\\GeekBurguer\\GeekBurguer.UI.Contract\\GeekBurguer.UI.Contract.csproj"
             }
           }
         }
