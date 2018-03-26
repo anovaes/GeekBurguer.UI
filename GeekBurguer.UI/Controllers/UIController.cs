@@ -78,21 +78,6 @@ namespace GeekBurguer.UI.Controllers
             return Ok(response);
         }
 
-        [HttpGet("{teste}")]
-        
-        public async Task<IActionResult> teste()
-        {
-            return Ok();
-        }
 
-        //[HttpGet("{storeid}")]
-        //public IActionResult GetProductsByStoreId(Guid storeId)
-        //{
-        //    var productsByStore = Products.Where(product =>
-        //    product.StoreId == storeId).ToList();
-        //    if (productsByStore.Count <= 0)
-        //        return NotFound();
-        //    return Ok(productsByStore);
-        //}
     }
 }
