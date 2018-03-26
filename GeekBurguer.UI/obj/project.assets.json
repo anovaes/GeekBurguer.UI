@@ -45,7 +45,16 @@
           "lib/netcoreapp2.0/GeekBurger.Products.Contract.dll": {}
         }
       },
-      "GeekBurger.Users.Contract/1.0.0": {
+      "GeekBurger.StoreCatalog.Contract/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp2.0/GeekBurger.StoreCatalog.Contract.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/GeekBurger.StoreCatalog.Contract.dll": {}
+        }
+      },
+      "GeekBurger.Users.Contract/2.0.0": {
         "type": "package",
         "compile": {
           "lib/netcoreapp2.0/GeekBurger.Users.Contract.dll": {}
@@ -5419,12 +5428,22 @@
         "lib/netcoreapp2.0/GeekBurger.Products.Contract.dll"
       ]
     },
-    "GeekBurger.Users.Contract/1.0.0": {
-      "sha512": "KJQpfwvLXCIBY210+oWM/KQKd8Mpfbb8C5QSQL1GqX/98a/FN4fuU3nhYXVIY0kSSVgrD2+XuwFdzoauczysuQ==",
+    "GeekBurger.StoreCatalog.Contract/1.0.0": {
+      "sha512": "3ouahho+0Qs1EyPpNtaHezAKRyQ4uyCMIuHSVeq4ODJxCk6GP1vaewI4k+3wg1udsUtRmpc/3j6k3a1nsCA4Ig==",
       "type": "package",
-      "path": "geekburger.users.contract/1.0.0",
+      "path": "geekburger.storecatalog.contract/1.0.0",
       "files": [
-        "geekburger.users.contract.1.0.0.nupkg.sha512",
+        "geekburger.storecatalog.contract.1.0.0.nupkg.sha512",
+        "geekburger.storecatalog.contract.nuspec",
+        "lib/netcoreapp2.0/GeekBurger.StoreCatalog.Contract.dll"
+      ]
+    },
+    "GeekBurger.Users.Contract/2.0.0": {
+      "sha512": "xErNdVMsSBa9e1Ta0xlBOCMt6H/D1PjZJe9KKDxBz6+HOHi8UljKJudWSDoKP5SlpGC2gaP32B5j8OsHjHEu3g==",
+      "type": "package",
+      "path": "geekburger.users.contract/2.0.0",
+      "files": [
+        "geekburger.users.contract.2.0.0.nupkg.sha512",
         "geekburger.users.contract.nuspec",
         "lib/netcoreapp2.0/GeekBurger.Users.Contract.dll"
       ]
@@ -13927,7 +13946,8 @@
       "AutoMapper >= 6.2.2",
       "GeekBurger.Orders.Contract >= 2.0.0",
       "GeekBurger.Products.Contract >= 3.0.0",
-      "GeekBurger.Users.Contract >= 1.0.0",
+      "GeekBurger.StoreCatalog.Contract >= 1.0.0",
+      "GeekBurger.Users.Contract >= 2.0.0",
       "GeekBurguer.UI.Contract >= 1.0.0",
       "Microsoft.AspNetCore.All >= 2.0.6",
       "Microsoft.Azure.Management.ServiceBus.Fluent >= 1.7.0",
@@ -13998,9 +14018,13 @@
             "target": "Package",
             "version": "[3.0.0, )"
           },
-          "GeekBurger.Users.Contract": {
+          "GeekBurger.StoreCatalog.Contract": {
             "target": "Package",
             "version": "[1.0.0, )"
+          },
+          "GeekBurger.Users.Contract": {
+            "target": "Package",
+            "version": "[2.0.0, )"
           },
           "Microsoft.AspNetCore.All": {
             "target": "Package",
