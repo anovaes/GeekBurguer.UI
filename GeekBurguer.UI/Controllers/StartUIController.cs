@@ -7,6 +7,7 @@ using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
 using GeekBurguer.UI.Controllers.Configuration;
+using GeekBurguer.UI.Service;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 
@@ -15,6 +16,7 @@ namespace GeekBurguer.UI.Controllers
     public class StartUIController : Controller
     {
         StoreCatalogApiConfiguration _storeCatalogConfiguration;
+        private Queue messageFila = new Queue();
         bool _storeCatalogOn;
         public StartUIController()
         {
@@ -26,8 +28,9 @@ namespace GeekBurguer.UI.Controllers
             _storeCatalogConfiguration = config.GetSection("StoreCatalogApi").Get<StoreCatalogApiConfiguration>();
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
+            await messageFila.EnviarMensagem("ShowProducts");
             while (!_storeCatalogOn)
             {
                 VerifyStoreCatalog();

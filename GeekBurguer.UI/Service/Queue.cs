@@ -24,9 +24,9 @@ namespace GeekBurguer.UI.Service
         const string QueueName = "GeekBurger";
         static IQueueClient queueClient;
 
-        public void EnviarMensagem(string msg)
+        public async Task EnviarMensagem(string msg)
         {
-            SendMessagesAsync(msg);
+            await SendMessagesAsync(msg);
         }
 
         static async Task SendMessagesAsync(string mensagem)
