@@ -7,6 +7,11 @@ using System.Threading.Tasks;
 using GeekBurguer.UI.Contract;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
+using System.IO;
+using GeekBurguer.UI.Controllers.Configuration;
+using GeekBurguer.UI.Service;
+using GeekBurger.Users.Contract;
 
 namespace GeekBurguer.UI.Controllers
 {
@@ -17,6 +22,8 @@ namespace GeekBurguer.UI.Controllers
         private Contract.User _usuario;
         private List<Store> _listaEstoque;
         static HttpClient client = new HttpClient();
+        private List<Product> _listaProdutos;
+        private Queue messageFila = new Queue();
         public UIController()
         {
             _usuario = new User
