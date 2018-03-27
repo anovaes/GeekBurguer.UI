@@ -24,6 +24,7 @@ namespace GeekBurguer.UI.Controllers
         static HttpClient client = new HttpClient();
         private List<Product> _listaProdutos;
         private Queue messageFila = new Queue();
+        private List<FoodRestrictionsList> foodRestrictionsLists;
         public UIController()
         {
             _usuario = new User
@@ -177,8 +178,8 @@ namespace GeekBurguer.UI.Controllers
         [HttpGet]
         public IActionResult ShowFoodRestrictionsForm(User user)
         {
-            var retorno = restrictionsLists;
-            return Ok(restrictionsLists);
+            var retorno = foodRestrictionsLists;
+            return Ok(foodRestrictionsLists);
         }
 
         [HttpPost]
