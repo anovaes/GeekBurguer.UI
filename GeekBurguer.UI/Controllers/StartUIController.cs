@@ -30,12 +30,13 @@ namespace GeekBurguer.UI.Controllers
 
         public async Task<IActionResult> Index()
         {
-            await messageFila.EnviarMensagem("ShowProducts");
             while (!_storeCatalogOn)
             {
                 VerifyStoreCatalog();
                 Thread.Sleep(10000);
             }
+
+            await messageFila.EnviarMensagem("ShowWelcomePage");
 
             return Ok();
         }
