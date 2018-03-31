@@ -12,6 +12,7 @@ using System.IO;
 using GeekBurguer.UI.Controllers.Configuration;
 using GeekBurguer.UI.Service;
 using GeekBurger.Users.Contract;
+using Newtonsoft.Json;
 
 namespace GeekBurguer.UI.Controllers
 {
@@ -218,12 +219,14 @@ namespace GeekBurguer.UI.Controllers
             return Ok(response);
         }
 
+        //Post envio da lista de produtos por fila
         [HttpPost("{ShowProducts}")]
         public IActionResult ShowProductsList(List<Product> list)
         {
             User user = new User();
             var lista = ApiShowProducts(user);
-            messageFila.EnviarMensagem("ShowProducts");
+            string result = JsonConvert.SerializeObject(lista);
+            messageFila.EnviarMensagem(result);
             return Ok(lista);
         }
 
